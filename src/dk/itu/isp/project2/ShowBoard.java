@@ -14,9 +14,7 @@ public class ShowBoard {
         if (arg.length == 1) {
             try {
                 size = Integer.valueOf(arg[0]);
-            } catch (Exception e) {
-                System.out.println("Default game board config: 5 * 5");
-            }
+            } catch (Exception e) {}
         }
         l.initializeGame(size);
 
